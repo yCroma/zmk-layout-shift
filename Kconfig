@@ -30,6 +30,11 @@ config LAYOUT_SHIFT_TARGET_SWAP_CTRL_CMD
     help
       Swap Ctrl / Cmd for Windows / Mac.
 
+config LAYOUT_SHIFT_TARGET_JIS_FROM_US
+    bool "Japanese (US)"
+    help
+      Japanese keyboard layout mappings from US.
+
 endchoice
 
 config LAYOUT_SHIFT_PERSISTENT_STATE

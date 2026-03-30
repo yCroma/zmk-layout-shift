@@ -1,0 +1,32 @@
+#ifdef LAYOUT_SHIFT_TARGET_JIS_FROM_US
+#define LAYOUT_DEFINED
+// Japanese (JIS) keyboard layout mappings
+// Maps US layout keycodes to their JIS equivalents
+static const struct keycode_mapping layout_map[] = {
+    /* from -> to, optional_modifiers */
+    /* 既に US を JIS で認識させるようにキーマップをつくっている */
+    /* それを US にもっていっても JIS で使えるようにしたい */
+    {UNDERSCORE,        EQUAL,             OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {EQUAL,             CARET,             OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {PLUS,              TILDE,             OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {LEFT_BRACKET,      AT_SIGN,           OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {LEFT_BRACE,        GRAVE,             OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {RIGHT_BRACKET,     LEFT_BRACKET,      OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {BACKSLASH,         RIGHT_BRACKET,     OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {RIGHT_BRACE,       LEFT_BRACE,        OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {PIPE,              RIGHT_BRACE,       OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {COLON,             PLUS,              OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {SINGLE_QUOTE,      COLON,             OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {DOUBLE_QUOTES,     ASTERISK,          OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {AT_SIGN,           DOUBLE_QUOTES,     OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {CARET,             AMPERSAND,         OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {AMPERSAND,         SINGLE_QUOTE,      OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {ASTERISK,          LEFT_PARENTHESIS,  OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {LEFT_PARENTHESIS,  RIGHT_PARENTHESIS, OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+
+    {LS(0x87),          UNDERSCORE,        OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {0x89,              BACKSLASH,         OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+    {LS(0x89),          PIPE,              OPTIONAL_CTRL | OPTIONAL_ALT | OPTIONAL_GUI},
+
+};
+#endif
