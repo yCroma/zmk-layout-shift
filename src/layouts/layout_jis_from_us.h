@@ -1,4 +1,4 @@
-#ifdef LAYOUT_SHIFT_TARGET_JIS_FROM_US
+#ifdef CONFIG_LAYOUT_SHIFT_TARGET_JIS_FROM_US
 #define LAYOUT_DEFINED
 // Japanese (JIS) keyboard layout mappings
 // Maps US layout keycodes to their JIS equivalents
